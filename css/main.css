@@ -144,7 +144,8 @@ h5, h6          { font-weight: bolder }
 
     header nav ul li a:hover,
     header nav ul li a.selected{
-        color: #969595;
+        color: #515050;
+        text-decoration: underline;
     }
 
     header .footer{
@@ -169,13 +170,13 @@ h5, h6          { font-weight: bolder }
         display: block;
         width: 30px;
         height: 30px;
-        background: url('../img/sm.png') no-repeat;
+        background: url('../img/sm.svg') no-repeat;
         background-position: 0 0;
     }
 
 
     header ul.social li a:hover{
-        background: url('../img/sm_hover.png') no-repeat;
+        background: url('../img/sm_hover.svg') no-repeat;
     }
 
 
@@ -206,8 +207,8 @@ h5, h6          { font-weight: bolder }
         background-position: -124px 0;
     }
 
-    header ul.social li a.rss,
-    header ul.social li a.rss:hover{
+    header ul.social li a.email,
+    header ul.social li a.email:hover{
         background-position: -155px 0;
     }
 
@@ -389,7 +390,7 @@ h5, h6          { font-weight: bolder }
     background-position: 50% 50%;
 }
 .primekeyhero {
-     background: url('../img/primekeyhero.png') no-repeat;
+     background: url('../img/primekeyhero.jpg') no-repeat;
     width: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -465,7 +466,6 @@ h5, h6          { font-weight: bolder }
     line-height: 30px;
     margin: 0!important;
     overflow: hidden;
-
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -634,6 +634,10 @@ h5, h6          { font-weight: bolder }
         text-decoration: none;
         border-top: 1px solid #f7f5f5;
         background: #fff;
+    }
+    header nav ul li a.selected{
+        color: #515050;
+        text-decoration: underline;
     }
     header nav ul li a:active{
         background: #f7f5f5;

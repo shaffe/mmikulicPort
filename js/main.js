@@ -202,8 +202,35 @@ function obfuscatorEmail3 () {
         }
       }
     document.write("<a href='mailto:"+link+"'>"+link+"</a>")
+    console.log("<a href='mailto:"+link+"'>"+link+"</a>")
 
 }
 
+function obfuscatorEmailIcon () {
+
+    /* primary email
+      coded = "vrFFE@7hZUI7UB8FUm.mE7"
+    key = "N0bAjJSQ7eVT9LlRUItBovyKuDcMPqgrY512FGpa6HExws83m4zdWZfCinOkXh"
+    */
+
+    // temporary email
+    coded = "8891S69w@uSc6uu1.wu8"
+    key = "JUE1eFoNw52jH73lvM04sTiOWZuVnAtxPCR6fabpmL9dqkSQXgcKrhBzDGyI8Y"
+    shift=coded.length
+    link=""
+    for (i=0; i<coded.length; i++) {
+    if (key.indexOf(coded.charAt(i))==-1) {
+      ltr = coded.charAt(i)
+      link += (ltr)
+    }
+    else {     
+      ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+      link += (key.charAt(ltr))
+    }
+    }
+    document.write("<li><a href=\"mailto:" + link + "\"  class=\"email\" data-title=\"Email\"></a></li>")
+    console.log("<li><a href=\"mailto:" + link + "\" class=\"email\" data-title=\"Email\"></a></li>")
+
+}
 
 
